@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ceskoike.github.io/sitemap.xml
