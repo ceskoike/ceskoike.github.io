@@ -40,5 +40,47 @@
    "reviews": 19382,
    "growth": null
   }
+ ],
+ "furusato-fruit": [
+  {
+   "date": "2026-10-21",
+   "reviews": 9408,
+   "growth": null
+  }
+ ],
+ "furusato-ikura": [
+  {
+   "date": "2026-10-21",
+   "reviews": 19999,
+   "growth": null
+  }
+ ],
+ "furusato-ebi": [
+  {
+   "date": "2026-10-21",
+   "reviews": 2554,
+   "growth": null
+  }
+ ],
+ "furusato-water": [
+  {
+   "date": "2026-10-21",
+   "reviews": 805,
+   "growth": null
+  }
+ ],
+ "no-iron-shirt-5set": [
+  {
+   "date": "2026-10-21",
+   "reviews": 16412,
+   "growth": null
+  }
+ ],
+ "osechi-2027-yoyaku": [
+  {
+   "date": "2026-10-21",
+   "reviews": 58830,
+   "growth": null
+  }
  ]
 }
