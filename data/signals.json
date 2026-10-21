@@ -4,6 +4,11 @@
    "date": "2026-10-20",
    "reviews": 3335,
    "growth": null
+  },
+  {
+   "date": "2026-10-22",
+   "reviews": 3335,
+   "growth": 0
   }
  ],
  "furusato-niku": [
@@ -11,6 +16,11 @@
    "date": "2026-10-20",
    "reviews": 4185,
    "growth": null
+  },
+  {
+   "date": "2026-10-22",
+   "reviews": 4185,
+   "growth": 0
   }
  ],
  "furusato-kaisen": [
@@ -18,6 +28,11 @@
    "date": "2026-10-20",
    "reviews": 43381,
    "growth": null
+  },
+  {
+   "date": "2026-10-22",
+   "reviews": 43384,
+   "growth": 3
   }
  ],
  "furusato-toilet-paper": [
@@ -25,6 +40,11 @@
    "date": "2026-10-20",
    "reviews": 7925,
    "growth": null
+  },
+  {
+   "date": "2026-10-22",
+   "reviews": 7927,
+   "growth": 2
   }
  ],
  "furusato-kani": [
@@ -32,6 +52,11 @@
    "date": "2026-10-20",
    "reviews": 3958,
    "growth": null
+  },
+  {
+   "date": "2026-10-22",
+   "reviews": 3958,
+   "growth": 0
   }
  ],
  "furusato-unagi": [
@@ -80,6 +105,13 @@
   {
    "date": "2026-10-21",
    "reviews": 58830,
+   "growth": null
+  }
+ ],
+ "osechi-2027": [
+  {
+   "date": "2026-10-22",
+   "reviews": 58432,
    "growth": null
   }
  ]
