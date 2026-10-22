@@ -64,6 +64,11 @@
    "date": "2026-10-20",
    "reviews": 19382,
    "growth": null
+  },
+  {
+   "date": "2026-10-23",
+   "reviews": 19386,
+   "growth": 4
   }
  ],
  "furusato-fruit": [
@@ -71,6 +76,11 @@
    "date": "2026-10-21",
    "reviews": 9408,
    "growth": null
+  },
+  {
+   "date": "2026-10-23",
+   "reviews": 9438,
+   "growth": 30
   }
  ],
  "furusato-ikura": [
@@ -78,6 +88,11 @@
    "date": "2026-10-21",
    "reviews": 19999,
    "growth": null
+  },
+  {
+   "date": "2026-10-23",
+   "reviews": 20001,
+   "growth": 2
   }
  ],
  "furusato-ebi": [
@@ -85,6 +100,11 @@
    "date": "2026-10-21",
    "reviews": 2554,
    "growth": null
+  },
+  {
+   "date": "2026-10-23",
+   "reviews": 2555,
+   "growth": 1
   }
  ],
  "furusato-water": [
@@ -92,6 +112,11 @@
    "date": "2026-10-21",
    "reviews": 805,
    "growth": null
+  },
+  {
+   "date": "2026-10-23",
+   "reviews": 806,
+   "growth": 1
   }
  ],
  "no-iron-shirt-5set": [
@@ -112,6 +137,13 @@
   {
    "date": "2026-10-22",
    "reviews": 58432,
+   "growth": null
+  }
+ ],
+ "nightbra-nonwire": [
+  {
+   "date": "2026-10-23",
+   "reviews": 33385,
    "growth": null
   }
  ]

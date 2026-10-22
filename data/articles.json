@@ -131,5 +131,23 @@
   "writer": "claude",
   "candidates": 107,
   "exp_fee": 678
+ },
+ {
+  "slug": "robot-cleaner-gomi-jido",
+  "skipped": true,
+  "date": "2026-10-23",
+  "title": "",
+  "cat": "家電"
+ },
+ {
+  "slug": "nightbra-nonwire",
+  "title": "ナイトブラ5点を口コミで比較",
+  "lead": "忙しい人向けに、楽天市場のナイトブラ5点を2026-10-23時点の情報でまとめました。選ぶ基準は口コミの信頼度、1あたりの値段、ポイント、送料の4つです。価格もポイントも変わるので、購入前に商品ページで確認してください。",
+  "cat": "インナー・下着・ナイトウェア",
+  "date": "2026-10-23",
+  "items": 5,
+  "writer": "claude",
+  "candidates": 96,
+  "exp_fee": 124
  }
 ]
