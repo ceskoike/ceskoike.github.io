@@ -1,0 +1,39 @@
+# 公開（push）のたびに、変わったページを IndexNow（Bing・Yandex など。Bing経由で ChatGPT検索・DuckDuckGo にも載る）へ知らせる。
+# Macの毎朝の公開は今日のページだけ知らせるので、まとめて直した時の取りこぼしをここで拾う。手で全ページ送る時は Actions から Run workflow。
+name: indexnow
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: GitHub Pagesの反映を待つ
+        run: sleep 90
+      - name: IndexNowへ送る
+        env:
+          ALL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, urllib.request
+          site = "https://ceskoike.github.io"
+          key = "8f687a3ea6f59044a422e4af25975235"
+          locs = re.findall(r"<loc>([^<]+)</loc>", open("sitemap.xml", encoding="utf-8").read())
+          if os.environ["ALL"] != "true":
+              try:
+                  out = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True, check=True).stdout.split()
+              except subprocess.CalledProcessError:
+                  out = []
+              changed = {site + "/" + f[:-len("index.html")] for f in out if f.endswith("index.html")}
+              locs = [u for u in locs if u in changed]
+          if not locs:
+              print("変わったページなし"); raise SystemExit
+          body = json.dumps({"host": "ceskoike.github.io", "key": key, "keyLocation": f"{site}/{key}.txt", "urlList": locs}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, method="POST", headers={"Content-Type": "application/json; charset=utf-8"})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              print(f"IndexNow に {len(locs)}件 HTTP {r.status}")
+          PY
